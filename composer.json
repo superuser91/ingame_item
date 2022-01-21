@@ -1,0 +1,33 @@
+{
+    "name": "vgplay/ingame-item",
+    "description": "Ingame item",
+    "type": "library",
+    "require": {
+        "php": "^7",
+        "laravel/framework": "^6|^7|^8",
+        "vgplay/contracts": "^1",
+        "vgplay/laravel-redis-model": "^1",
+        "ckfinder/ckfinder-laravel-package": "v3.5.2.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Vgplay\\IngameItem\\": "src/",
+            "Vgplay\\IngameItem\\Database\\Factories\\": "database/factories"
+        }
+    },
+    "authors": [
+        {
+            "name": "dung199551",
+            "email": "dung199551@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vgplay\\IngameItem\\IngameItemServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
