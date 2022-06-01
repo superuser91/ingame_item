@@ -27,7 +27,7 @@ class IngameItem extends Model implements Cacheable, Deliverable
         'stats' => 'array',
     ];
 
-    public function deliver(Player $player, array $data)
+    public function deliver(Player $player, array $data = [])
     {
         return $this;
     }
